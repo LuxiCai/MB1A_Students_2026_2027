@@ -1,0 +1,36 @@
+---
+title: "hpa_quarto"
+author: "Luxi Cai"
+---
+# Brain Summary Report
+
+This quarto is created to calculate the total number of genes with *regionally elevated expression* in the forebrain (i.e. the cerebral cortex, basal ganglia, thalamus and hypothalamus) in **human**, **pig** and **mouse**. \
+Data obtained from the BRAIN SUMMARY table in the Human Protein Atlas (HPA) project. 
+
+
+## Human
+```{r}
+human <- sum(180, 83, 57, 110)
+print(human)
+```
+
+## Pig
+```{r}
+pig <- sum(109, 157, 31, 45)
+print(pig)
+```
+
+## Mouse
+```{r}
+library(styler)
+mouse <- sum(55, 185, 60, 98)
+print(mouse)
+```
+
+
+The species that has the highest number of genes with regionally elevated expression is human, with 430 genes. 
+
+
+**References**
+
+[The Brain resource - Protein profiles of different regions of the brain](https://www.proteinatlas.org/humanproteome/brain)
