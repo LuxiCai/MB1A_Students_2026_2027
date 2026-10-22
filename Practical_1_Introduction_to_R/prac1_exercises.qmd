@@ -55,3 +55,55 @@ n_after_1 <- 1432
 n_after_2 <- 7543
 ```
 
+
+```{r}
+install.packages("fortunes")
+```
+
+```{r}
+library(fortunes)
+fortune()
+```
+```{r}
+install.packages("tidyverse")
+library(tidyverse)
+
+```
+```{r}
+install.packages("gt")
+library(gt)
+```
+
+```{r}
+# Combining vectors
+cell_id <- c(cell_id_1, cell_id_2)
+treated <- c(treated_1, treated_2)
+n_before <- c(n_before_1, n_before_2)
+n_after <- c(n_after_1, n_after_2)
+```
+
+```{r}
+all_my_pets <- c("dog", "horse", "guinea pig", "chicken", "cat")
+the_fourth_pet <- all_my_pets[4]
+print(the_fourth_pet)
+```
+
+```{r}
+x <- c(2, -4, 6, -2)
+x * 2
+x > 5
+sum(x)
+abs(x)
+```
+
+```{r}
+my_data_frame <- tibble(
+  cell_ID = cell_id,
+  treated = treated,
+  number_cells_before = n_before,
+  number_cells_after = n_after
+)
+
+gt(my_data_frame)
+```
+
