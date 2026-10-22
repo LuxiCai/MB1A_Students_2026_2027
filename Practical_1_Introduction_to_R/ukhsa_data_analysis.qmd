@@ -1,0 +1,31 @@
+---
+title: "ukhsa_data_analysis"
+author: "Luxi Cai"
+---
+
+This code aims to visualise the Weekly laboratory notifications of Invasive group A streptococcal infection (iGAS) for England.
+
+```{r}
+library(tidyverse)
+library(gt)
+```
+
+```{r}
+iGAS <- read_csv("data/ukhsa-chart-download-iGAS.csv")
+gt(head(iGAS))
+
+```
+
+
+```{r}
+ggplot(iGAS, aes(
+  x = date, 
+  y = metric_value
+)) +
+  geom_line(colour = "green") +
+  xlab("Date") +
+  ylab("Laboratory notifications") +
+  ggtitle("Weekly laboratory notifications of iGAS in England")
+```
+
+
