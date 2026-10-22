@@ -1,0 +1,57 @@
+---
+title: "prac1_exercises"
+author: "Luxi Cai"
+---
+
+
+This part attempts to round the number 3.14159. 
+```{r}
+round(3.14159)
+```
+
+```{r}
+round(3.14159, digits = 2)
+```
+
+
+This part attempts to repeat 5 for seven times. 
+```{r}
+print(rep(5, 7))
+```
+```{r}
+print(rep(x = 5, times = 7))
+```
+
+This part attempts to catagorise variables. 
+```{r}
+x <- "miao"
+print(x)
+print(class(x))
+```
+
+```{r}
+y <- 2000+95
+print(y)
+print(class(y))
+```
+
+```{r}
+z <- TRUE
+print(z)
+print(class(z))
+```
+
+```{r}
+cell_id_1 <- "CX1"
+cell_id_2 <- "CX2"
+
+treated_1 <- TRUE
+treated_2 <- FALSE
+
+n_before_1 <- 5415
+n_before_2 <- 8123
+
+n_after_1 <- 1432
+n_after_2 <- 7543
+```
+
